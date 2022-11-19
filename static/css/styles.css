@@ -1,0 +1,85 @@
+html,
+body {
+  height: 100%;
+}
+
+/*https://s3.envato.com/files/c304f4a5-154f-43bf-a1c5-858ad2dc154d/inline_image_preview.jpg*/
+
+body {
+  background-image: url('https://www.psychowellnesscenter.com/images/blogs/1603722498Blog.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+body {
+  display: flex;
+  font-family: "Montserrat";
+  font-size: 108%;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: static;
+}
+
+h1 {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+  position: static;
+}
+
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin-left: 500px;
+  position:static;
+}
+
+.space {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.spaceButton {
+  padding-top: 30px;
+}
+
+h4,
+.h4 {
+  font-size: 169%;
+}
+
+.user{
+  padding-bottom:20px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="mean"]{
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.form-signin input[type="error"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+
+}
+
+.form-signin input[type="wrong"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}

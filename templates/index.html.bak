@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Researcher Page</title>
+  <link rel="icon" href="{{url_for('static',filename='images/favicon.ico')}}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link href="{{url_for('static',filename='css/styles.css')}}" rel="stylesheet">
+</head>
+
+<!--styless.css-->
+<!--<link rel="shortcut icon" href="favicon.ico">.ico">-->
+
+<body class="text-center">
+  <main class="w-100 m-auto">
+    <h1 class=" text-left h2 mb-3 fw-normal"><strong>Breast cancer Perdiction website</strong></h1>
+    <form action="http://127.0.0.1:5000/success" method="post" class="text-centre form-signin" id="allign">
+      <h3 class="h3 mb-5 fw-normal">Give it a go!!</h3>
+      <h3 class="h3 mb-4 fw-bold">Enter Your Name</h3>
+      <div class="form-floating user">
+        <input type="mean" name="name" class="form-control" id="floatingInput" placeholder="User Name">
+        <label for="floatingInput">User Name</label> <!--for screen reader-->
+      </div>
+
+
+      <h3 class="h4 mb-4 fw-bold"> Enter mean fields Data</h3>
+      <!--{% for i in meanData: %}
+      <div class="form-floating">
+        <input type="mean" name={{i}} class="form-control mean" id="floatingInput" placeholder={{i}}>
+        <label for="floatingInput" class="mean">{{i}}</label>
+      </div> 
+      {% endfor %} -->
+	  
+	  <div class="form-floating">
+        <input type="mean" name="mean radius" class="form-control" id="floatingInputMean" placeholder="mean radius">
+        <label for="floatingInput"> mean radius</label>
+      </div>
+	  <div class="form-floating">
+        <input type="mean" name="mean texture" class="form-control" id="floatingInputMean" placeholder="mean texture">
+        <label for="floatingInput">mean texture</label>
+      </div>
+      <div class="form-floating">
+        <input type="mean" name="mean perimeter" class="form-control" id="floatingInputMean" placeholder=" mean perimeter">
+        <label for="floatingInput"> mean perimeter</label>
+      </div>
+      <div class="form-floating">
+        <input type="mean" name="mean area" class="form-control" id="floatingInputMean" placeholder="mean area">
+        <label for="floatingInput">mean area </label>
+      </div>
+      <div class="form-floating">
+        <input type="mean" name="mean smoothness" class="form-control" id="floatingInputMean" placeholder="mean smoothness">
+        <label for="floatingInput">mean smoothness </label>
+      </div>
+      <div class="form-floating">
+        <input type="mean" name="mean compactness" class="form-control" id="floatingInputMean" placeholder="mean compactness">
+        <label for="floatingInput">mean compactness</label>
+      </div>
+      <div class="form-floating">
+        <input type="mean" name="mean concavity" class="form-control" id="floatingInputMean" placeholder="mean concavity ">
+        <label for="floatingInput">mean concavity </label>
+      </div>
+      <div class="form-floating">
+        <input type="mean" name="mean concave points" class="form-control" id="floatingInputMean" placeholder="mean concave points">
+        <label for="floatingInput">mean concave points</label>
+      </div>
+      <div class="form-floating">
+        <input type="mean" name="mean symmetry" class="form-control" id="floatingInputMean" placeholder="mean symmetry">
+        <label for="floatingInput">mean symmetry</label>
+      </div>
+      <div class="form-floating">
+        <input type="mean" name="mean fractal dimension" class="form-control" id="floatingInputMean" placeholder="mean fractal dimension">
+        <label for="floatingInput">mean fractal dimension</label>
+      </div>
+	  
+      <h3 class="h4 mb-3 fw-bold space"> Enter Error Fields Data</h3>
+      <!--{% for i in errorData: %}
+      <div class="form-floating">
+        <input type="error" name={{i}} class="form-control" id="floatingInput" placeholder={{i}}>
+        <label for="floatingInput">{{i}}</label>
+      </div>
+      {% endfor %}-->
+	  
+	  <div class="form-floating">
+        <input type="error" name="radius error" class="form-control" id="floatingPassword" placeholder="radius error">
+        <label for="floatingInput">radius error</label>
+      </div>
+
+    <div class="form-floating">
+        <input type="error" name="texture error" class="form-control" id="floatingPassword" placeholder="texture error">
+        <label for="floatingInput">texture error</label>
+      </div>
+      <div class="form-floating">
+        <input type="error" name="perimeter error" class="form-control" id="floatingInput" placeholder="perimeter error">
+        <label for="floatingInput">perimeter error</label>
+      </div>
+      <div class="form-floating">
+        <input type="error" name="area error" class="form-control" id="floatingPassword" placeholder="area error">
+        <label for="floatingInput">area error</label>
+      </div>
+      <div class="form-floating">
+        <input type="error" name="smoothness error" class="form-control" id="floatingInput" placeholder="smoothness error ">
+        <label for="floatingInput">smoothness error </label>
+      </div>
+      <div class="form-floating">
+        <input type="error" name="concavity error" class="form-control" id="floatingPassword" placeholder="concavity error">
+        <label for="floatingInput">concavity error</label>
+      </div>
+	  <div class="form-floating">
+        <input type="error" name="compactness error" class="form-control" id="floatingPassword" placeholder="compactness error">
+        <label for="floatingInput">compactness error</label>
+      </div>
+      <div class="form-floating">
+        <input type="error" name="concave points error" class="form-control" id="floatingPassword" placeholder="concave points error">
+        <label for="floatingInput">concave points error</label>
+      </div>
+      <div class="form-floating">
+        <input type="error" name="symmetry error" class="form-control" id="floatingPassword" placeholder="symmetry error ">
+        <label for="floatingInput">symmetry error </label>
+      </div>
+      <div class="form-floating">
+        <input type="error" name="fractal dimension error" class="form-control" id="floatingPassword" placeholder="fractal dimension error">
+        <label for="floatingInput">fractal dimension error</label>
+      </div>
+
+
+      <h3 class="h4 mb-3 fw-bold space">Enter wrong fields Data</h3>
+      <!--{% for i in worstData: %}
+      <div class="form-floating">
+        <input type="wrong" name={{i}} class="form-control" id="floatingInput" placeholder={{i}}>
+        <label for="floatingInput">{{i}}</label>
+      </div>
+      {% endfor %}-->
+	  
+	  <div class="form-floating">
+        <input type="wrong" name="worst radius" class="form-control" id="floatingPassword" placeholder="worst radius">
+        <label for="floatingInput">worst radius</label>
+      </div>
+
+      <div class="form-floating">
+        <input type="wrong" name="worst texture" class="form-control" id="floatingPassword" placeholder="worst texture">
+        <label for="floatingInput">worst texture</label>
+      </div>
+      <div class="form-floating">
+        <input type="wrong" name="worst perimeter" class="form-control" id="floatingPassword" placeholder="worst perimeter">
+        <label for="floatingInput">worst perimeter</label>
+      </div>
+      <div class="form-floating">
+        <input type="wrong" name="worst area" class="form-control" id="floatingPassword" placeholder="worst area">
+        <label for="floatingInput">worst area</label>
+      </div>
+      <div class="form-floating">
+        <input type="wrong" name="worst smoothness" class="form-control" id="floatingPassword" placeholder="worst smoothness">
+        <label for="floatingInput">worst smoothness</label>
+      </div>
+      <div class="form-floating">
+        <input type="wrong" name="worst compactness" class="form-control" id="floatingPassword" placeholder="worst compactness">
+        <label for="floatingInput">worst compactness</label>
+      </div>
+      <div class="form-floating">
+        <input type="wrong" name="worst concavity" class="form-control" id="floatingPassword" placeholder="worst concavity">
+        <label for="floatingInput">worst concavity</label>
+      </div>
+      <div class="form-floating">
+        <input type="wrong" name="worst concave points" class="form-control" id="floatingPassword" placeholder="worst concave points">
+        <label for="floatingInput">worst concave points</label>
+      </div>
+      <div class="form-floating">
+        <input type="wrong" name="worst symmetry" class="form-control" id="floatingPassword" placeholder="worst symmetry">
+        <label for="floatingInput">worst symmetry</label>
+      </div>
+      <div class="form-floating">
+        <input type="wrong" name="worst fractal dimension" class="form-control" id="floatingPassword" placeholder="worst fractal dimension">
+        <label for="floatingInput">worst fractal dimension</label>
+      </div>
+
+      <div class="spaceButton">
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Check</button>
+      </div>
+
+      <p class="mt-5 mb-3 text-dark">&copy; 2021–2022</p>
+    </form>
+  </main>
+
+</body>
+
+</html>

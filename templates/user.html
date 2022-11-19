@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <link rel="icon" href="{{url_for('static',filename='images/favicon.ico')}}">
+	<link href="{{url_for('static',filename='css/bootstrap.css')}}" rel="stylesheet">
+
+    <style>
+        .back {
+            background: url(https://thumbs.dreamstime.com/z/horizontal-pain-measurement-scale-emoji-icons-fill-color-assessment-tool-level-indicator-stress-smiley-faces-medical-180742515.jpg) no-repeat center center fixed;
+            filter: brightness(50%)
+        }
+
+        .form_table {
+            word-wrap: break-word;
+            border: 2px solid #000000;
+            width: 550px;
+        }
+    </style>
+</head>
+
+<body class="front_html1">
+
+    <div class="title">
+        <h1 class="text-center">
+            <tittle>USER INFORMATIONS</tittle>
+        </h1>
+    </div>
+    <br>
+    <table class="form_table" style="color:#000000">
+        <form id="frm1" action="http://127.0.0.1:5000/succ" method="post">
+
+            <tbody>
+			
+			<tr>
+			
+			<td>
+			
+			<b> Enter Name : </b>
+			<br>
+			</td>
+			
+			<td> </td>
+			
+			<td> 
+			<input type="text" name="Uname">
+			</td>
+			</tr>
+                <tr>
+
+                    <td>
+
+                        <b>1) Clump Thickness: </b>
+                        <br>
+                        On a scale of 1-10 describe how much lumpiness, pain and tenderness
+                        you experienced in the upper and outer are of the breasts
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type="number" name="Clump Thickness">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <b>2) Uniformity of Cell Size: </b>
+                        <br>
+                        The size of the breast changes/ Swelling of all or part of a breast (even if no lump is
+                        felt)
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type="text" name="Uniformity of Cell Size">
+                    </td>
+                </tr>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <b>3) Uniformity of Cell Shape: </b>
+                        <br>
+                        On a scale of 1-10 how much change in appearance of breast have you observed 1 - minimal change
+                        and
+                        10 - enormous change
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type="number" name="Uniformity of Cell Shape">
+                    </td>
+                </tr>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <b>4) Marginal Adhesion: </b>
+                        <br>
+                        A tingling or burning sensation,persistent breast pain or tenderness, which might increase
+                        during
+                        your menstrual period.
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type="text" name="Marginal Adhesion">
+                    </td>
+                </tr>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <b>5) Irritation: </b>
+                        <br>
+                        Any irritation and uncomfortable around the area.
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type="text" name="Single Epithelial Cell Size">
+                    </td>
+                </tr>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <b>6) Base Nuclei: </b>
+                        <br>
+                        Color of both/any one secretion is of thin or thick and range in color from clear to milky to
+                        yellow, green, or red.
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type="text" name="Bare Nuclei">
+                    </td>
+                </tr>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <b>7) Bland_chromatin: </b>
+                        <br>
+                        A rash around (or on) one of the nipples or The nipple-skin or breast-skin may have started to
+                        peel,
+                        scale or flake. (As value increases chance of malignant increases).
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type="text" name="Bland Chromatin">
+                    </td>
+                </tr>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <b>8) Normal Nucleoli: </b>
+                        <br>
+                        Any swollen lymph node/swollen around the area or under the arm, collarbone, near
+                        breastbone.
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type="text" name="Normal Nucleoli">
+                    </td>
+                </tr>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <b>9) Mitoses: </b>
+                        <br>
+                        On a scale of 1-10 describe have you expereienced menopause, weak bones and low cholestrol
+                        symptoms
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type="number" name="Mitoses">
+                    </td>
+                </tr>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td style="text-align:right">
+                        <input type="submit" value="SUBMIT" style="color: black;">
+                    </td>
+
+                </tr>
+                </tr>
+
+            </tbody>
+
+        </form>
+    </table>
+    <br><br><br><br>
+    <img src="https://thumbs.dreamstime.com/z/horizontal-pain-measurement-scale-emoji-icons-fill-color-assessment-tool-level-indicator-stress-smiley-faces-medical-180742515.jpg"
+        width="50%" height="50%" class="center">
+</body>
+
+</html>
